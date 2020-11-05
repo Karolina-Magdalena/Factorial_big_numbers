@@ -1,6 +1,8 @@
-# Factorial_big_numbers
-In this task I need to print a factorial of number under 100. Becaouse of that I need to print very big numbers. To solve this task I used supercarry method. In this method you find and write to array every singel digit of the number and at the end simply print the array.
+#include <bits/stdc++.h>
 
+using namespace std;
+
+// Complete the extraLongFactorials function below.
 void extraLongFactorials(int n) {
 int i = 0, carry=0, number, j=0, counting, length;
 int arr[10000] = {0};
@@ -40,4 +42,15 @@ while (n!=1)
         cout<<arr[i];
     }
 }
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    extraLongFactorials(n);
+
+    return 0;
 }
